@@ -21,6 +21,7 @@ For more information about this project, please read the subject file:
     <li>CPP03: <a href="https://github.com/recozzi/CPPmodules_42/blob/master/CPP03/en.subject.pdf">here</a>.</li>
     <li>CPP04: <a href="https://github.com/recozzi/CPPmodules_42/blob/master/CPP04/en.subject.pdf">here</a>.</li>
     <li>CPP05: <a href="https://github.com/recozzi/CPPmodules_42/blob/master/CPP05/en.subject.pdf">here</a>.</li>
+    <li>CPP06: <a href="https://github.com/recozzi/CPPmodules_42/blob/master/CPP06/en.subject.pdf">here</a>.</li>
 </ul>
 <h2>License</h2>
 See <a href="https://github.com/recozzi/CPPmodules_42/blob/master/LICENSE">License</a>.

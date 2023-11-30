@@ -5,19 +5,22 @@
 #                                                     +:+ +:+         +:+      #
 #    By: recozzi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/17 16:33:30 by recozzi           #+#    #+#              #
-#    Updated: 2023/11/17 16:33:31 by recozzi          ###   ########.fr        #
+#    Created: 2023/11/22 13:59:12 by recozzi           #+#    #+#              #
+#    Updated: 2023/11/30 10:42:12 by recozzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:=	harlFilter
+NAME		:=	identifyType
 
 CC			:=	c++
 
 FLAGS		:=	-g -Wall -Wextra -Werror -std=c++98
 
 SRCS		:=	main.cpp	\
-				Harl.cpp
+				Base.cpp	\
+				A.cpp		\
+				B.cpp		\
+				C.cpp
 
 OBJS_DIR	:=	objs/
 

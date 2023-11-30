@@ -6,51 +6,55 @@
 #    By: recozzi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 13:14:45 by recozzi           #+#    #+#              #
-#    Updated: 2023/11/16 13:14:46 by recozzi          ###   ########.fr        #
+#    Updated: 2023/11/30 15:37:11 by recozzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	:=	form
+NAME		:=	form
 
-CC		:=	c++
+CC			:=	c++
 
-FLAGS	:=	-g -Wall -Wextra -Werror -std=c++98
+FLAGS		:=	-g -Wall -Wextra -Werror -std=c++98
 
-SRC		:=	main.cpp		\
-			Bureaucrat.cpp	\
-			Form.cpp
+SRCS		:=	main.cpp		\
+				Bureaucrat.cpp	\
+				Form.cpp
 
-OBJ		:=	$(SRC:.cpp=.o)
+OBJS_DIR	:=	objs/
+
+OBJS 		:=	$(addprefix $(OBJS_DIR), $(SRCS:.cpp=.o))
 
 # COLORS ================================================================= #
 
-RED = \033[0;91m
-GREEN = \033[0;92m
-YELLOW = \033[0;93m
-CYAN = \033[0;96m
-WHITE = \033[0;97m
+RED		=	\033[0;91m
+GREEN	=	\033[0;92m
+YELLOW	=	\033[0;93m
+CYAN	=	\033[0;96m
+WHITE	=	\033[0;97m
 
 # ======================================================================== #
 
-%.o: %.cpp
-	@$(CC) $(FLAGS) -c $< -o $@
-	@echo "$(GREEN)Compiling:$(WHITE) $<"
+$(OBJS_DIR)%.o:	%.cpp
+			@mkdir -p $(dir $@)
+			@$(CC) $(FLAGS) -c $< -o $@
+			@echo "$(GREEN)Compiling:$(WHITE) $<"
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	@$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+$(NAME): $(OBJS)
+	@$(CC) $(FLAGS) $(OBJS) -o $(NAME)
 	@echo "$(YELLOW)- Program Name: $(WHITE)${NAME}"
 	@echo "$(YELLOW)- Compiler: $(WHITE)${CC}"
 	@echo "$(YELLOW)- Flags: $(WHITE)${FLAGS}"
 
 clean:
-	@rm -rf $(OBJ)
-	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed with $(WHITE)${RM} $(YELLOW)"
+	@rm $(OBJS)
+	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed..."
 
 fclean:	clean
-	@rm -rf $(NAME)
-	@echo "$(RED)..and $(CYAN)${NAME} $(RED)as been removed"
+	@rm $(NAME)
+	@rm -rf $(OBJS_DIR)
+	@echo "$(RED)...And $(CYAN)${NAME}$(RED) as been removed."
 
 re:	fclean all
 

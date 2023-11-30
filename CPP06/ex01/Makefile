@@ -5,19 +5,19 @@
 #                                                     +:+ +:+         +:+      #
 #    By: recozzi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/17 16:33:30 by recozzi           #+#    #+#              #
-#    Updated: 2023/11/17 16:33:31 by recozzi          ###   ########.fr        #
+#    Created: 2023/11/22 13:59:12 by recozzi           #+#    #+#              #
+#    Updated: 2023/11/24 14:51:35 by recozzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:=	harlFilter
+NAME		:=	serialization
 
 CC			:=	c++
 
 FLAGS		:=	-g -Wall -Wextra -Werror -std=c++98
 
-SRCS		:=	main.cpp	\
-				Harl.cpp
+SRCS		:=	main.cpp			\
+				Serializer.cpp
 
 OBJS_DIR	:=	objs/
 
