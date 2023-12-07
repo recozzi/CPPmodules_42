@@ -6,14 +6,11 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 16:58:22 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/04 18:47:40 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:29:25 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-
-#ifndef POINT_HPP
-# define POINT_HPP
 
 #include "Fixed.hpp"
 
@@ -40,5 +37,3 @@ class	Point
 };
 
 bool	bsp( Point const a, Point const b, Point const c, Point const point);
-
-#endif

@@ -6,18 +6,15 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 18:15:17 by recozzi           #+#    #+#             */
-/*   Updated: 2023/10/30 17:30:55 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:21:53 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
-
-# include <iostream>
-# include <string>
-# include <cstdlib>
+#include <iostream>
+#include <string>
+#include <cstdlib>
 
 class	Zombie
 {
@@ -36,5 +33,3 @@ class	Zombie
 };
 
 Zombie*		zombieHorde(int N, std::string name);
-
-#endif

@@ -6,16 +6,13 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:27:00 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/09 16:25:21 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:38:59 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef CURE_HPP
-# define CURE_HPP
-
-# include "AMateria.hpp"
+#include "AMateria.hpp"
 
 class	Cure : public AMateria
 {
@@ -30,5 +27,3 @@ class	Cure : public AMateria
 		virtual AMateria*	clone() const;
 		virtual void		use(ICharacter& target);
 };
-
-#endif

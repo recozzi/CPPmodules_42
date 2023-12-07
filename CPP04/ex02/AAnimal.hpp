@@ -6,14 +6,11 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 10:51:50 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/10 17:39:31 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:37:24 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-
-#ifndef AANIMAL_HPP
-# define AANIMAL_HPP
 
 #include <iostream>
 
@@ -35,5 +32,3 @@ class	AAnimal
 		std::string		getType(void) const;
 		virtual	void	makeSound(void) const = 0;
 };
-
-#endif

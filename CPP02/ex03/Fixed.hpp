@@ -6,17 +6,14 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 16:29:50 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/04 16:58:01 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:28:46 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef FIXED_HPP
-# define FIXED_HPP
-
-# include <iostream>
-# include <cmath>
+#include <iostream>
+#include <cmath>
 
 class	Fixed
 {
@@ -64,5 +61,3 @@ class	Fixed
 };
 
 std::ostream&	operator<<(std::ostream& out, const Fixed& rhs);
-
-#endif

@@ -6,17 +6,14 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:35:29 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/17 11:48:52 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:45:48 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef PRESIDENTIALPARDONFORM_HPP
-# define PRESIDENTIALPARDONFORM_HPP
-
-# include "AForm.hpp"
-# include "Bureaucrat.hpp"
+#include "AForm.hpp"
+#include "Bureaucrat.hpp"
 
 class	PresidentialPardonForm : public AForm
 {
@@ -37,5 +34,3 @@ class	PresidentialPardonForm : public AForm
 		std::string		getTarget(void) const;
 		virtual void	execute(const Bureaucrat& executor) const;
 };
-
-#endif

@@ -6,17 +6,14 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 09:46:23 by recozzi           #+#    #+#             */
-/*   Updated: 2023/12/07 09:16:47 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:50:01 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef SERIALIZER_HPP
-# define SERIALIZER_HPP
-
-# include <iostream>
-# include <stdint.h>
+#include <iostream>
+#include <stdint.h>
 
 typedef struct s_data
 {
@@ -43,5 +40,3 @@ class Serializer
 		static uintptr_t	serialize(Data* ptr);
 		static Data*		deserialize(uintptr_t raw);
 };
-
-#endif	

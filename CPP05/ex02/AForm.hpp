@@ -12,11 +12,8 @@
 
 #pragma once
 
-#ifndef AFORM_HPP
-# define AFORM_HPP
-
-# include <exception>
-# include <iostream>
+#include <exception>
+#include <iostream>
 
 class	Bureaucrat;
 
@@ -70,5 +67,3 @@ class	AForm
 };
 
 std::ostream&	operator<<(std::ostream& os, const AForm& rhs);
-
-#endif

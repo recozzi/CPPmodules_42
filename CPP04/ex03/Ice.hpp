@@ -6,16 +6,13 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 13:16:31 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/09 16:25:39 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:39:10 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef ICE_HPP
-# define ICE_HPP
-
-# include "AMateria.hpp"
+#include "AMateria.hpp"
 
 class	Ice : public AMateria
 {
@@ -29,5 +26,3 @@ class	Ice : public AMateria
 		virtual AMateria*	clone() const;
 		virtual void		use(ICharacter& target);
 };
-
-#endif

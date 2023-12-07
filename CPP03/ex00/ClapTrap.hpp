@@ -6,16 +6,13 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 11:54:36 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/03 16:13:37 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:29:54 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef CLAPTRAP_HPP
-# define CLAPTRAP_HPP
-
-# include <iostream>
+#include <iostream>
 
 class	ClapTrap
 {
@@ -48,5 +45,3 @@ class	ClapTrap
 		void			takeDamage(unsigned int amount);
 		void			beRepaired(unsigned int amount);
 };
-
-#endif

@@ -6,24 +6,23 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 14:00:36 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/24 16:25:23 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:47:34 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCALARCONVERTER_HPP
-# define SCALARCONVERTER_HPP
+#pragma once
 
-# include <iostream>
-# include <exception>
-# include <cstdlib>
-# include <limits>
+#include <iostream>
+#include <exception>
+#include <cstdlib>
+#include <limits>
 
-# define MIN_INT -2147483648
-# define MAX_INT 2147483647
-# define MIN_FLOAT -3.40282e+38
-# define MAX_FLOAT 3.40282e+38
-# define MIN_DOUBLE -1.79769e+308
-# define MAX_DOUBLE 1.79769e+308
+#define MIN_INT -2147483648
+#define MAX_INT 2147483647
+#define MIN_FLOAT -3.40282e+38
+#define MAX_FLOAT 3.40282e+38
+#define MIN_DOUBLE -1.79769e+308
+#define MAX_DOUBLE 1.79769e+308
 
 enum    e_type
 {
@@ -57,5 +56,3 @@ void	convertChar(const std::string& str, size_t& len);
 void	convertInt(const std::string& str);
 void	convertFloat(const std::string& str);
 void	convertDouble(const std::string& str);
-
-#endif

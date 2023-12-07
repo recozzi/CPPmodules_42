@@ -6,16 +6,13 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 10:57:27 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/30 11:06:16 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:50:20 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef B_HPP
-# define B_HPP
-
-# include "A.hpp"
+#include "A.hpp"
 
 class B : public Base
 {
@@ -25,5 +22,3 @@ class B : public Base
 	
 		virtual ~B(void);
 };
-
-#endif

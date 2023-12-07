@@ -6,18 +6,15 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:43:50 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/17 11:26:55 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:45:26 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef BUREAUCRAT_HPP
-# define BUREAUCRAT_HPP
-
-# include <exception>
-# include <iostream>
-# include "AForm.hpp"
+#include <exception>
+#include <iostream>
+#include "AForm.hpp"
 
 class	Bureaucrat
 {
@@ -59,5 +56,3 @@ class	Bureaucrat
 };
 
 std::ostream&	operator<<(std::ostream& os, const Bureaucrat& rhs);
-
-#endif

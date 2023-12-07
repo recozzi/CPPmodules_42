@@ -6,7 +6,7 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:06:55 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/02 17:12:12 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:29:11 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,6 @@ Fixed::Fixed(const Fixed& src) { *this = src; }
 
 //========= DESTRUCTOR =========//
 Fixed::~Fixed(void) { }
-
-int	Fixed::getRawBits(void) const
-{
-	return this->_fixedPoint;
-}
 
 //========= OPERATOR OVERLOADS - ARITHMETIC OPERATORS =========//
 Fixed&	Fixed::operator=(const Fixed& rhs)
@@ -165,6 +160,11 @@ const Fixed&	Fixed::max(const Fixed& n1, const Fixed& n2)
 void	Fixed::setRawBits(int const raw)
 {
 	this->_fixedPoint = raw;
+}
+
+int	Fixed::getRawBits(void) const
+{
+	return this->_fixedPoint;
 }
 
 float	Fixed::toFloat(void) const

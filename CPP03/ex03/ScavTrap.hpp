@@ -6,16 +6,13 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 17:43:38 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/04 11:57:23 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:33:41 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
-
-# include "ClapTrap.hpp"
+#include "ClapTrap.hpp"
 
 class	ScavTrap : virtual public ClapTrap
 {
@@ -32,5 +29,3 @@ class	ScavTrap : virtual public ClapTrap
 		void	attack(const std::string& target);
 		void	guardGate(void);
 };
-
-#endif

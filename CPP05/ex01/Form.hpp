@@ -6,17 +6,14 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 16:14:36 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/16 18:13:03 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:41:47 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef FORM_HPP
-# define FORM_HPP
-
-# include <exception>
-# include <iostream>
+#include <exception>
+#include <iostream>
 
 class	Bureaucrat;
 
@@ -61,5 +58,3 @@ class	Form
 };
 
 std::ostream&	operator<<(std::ostream& os, const Form& rhs);
-
-#endif

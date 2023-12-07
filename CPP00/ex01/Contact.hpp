@@ -6,19 +6,16 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 14:03:27 by recozzi           #+#    #+#             */
-/*   Updated: 2023/12/07 09:15:02 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:20:32 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef CONTACT_HPP
-# define CONTACT_HPP
-
-# include <iostream>
-# include <string>
-# include <iomanip> 
-# include <cstdlib>
+#include <iostream>
+#include <string>
+#include <iomanip> 
+#include <cstdlib>
 
 class Contact
 {
@@ -42,5 +39,3 @@ class Contact
 		void			printContact(void) const;
 		std::string		getValue(std::string field) const;
 };
-
-#endif

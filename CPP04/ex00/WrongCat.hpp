@@ -6,14 +6,11 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 14:09:44 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/17 17:15:34 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:35:55 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-
-#ifndef WRONGCAT_HPP
-# define WRONGCAT_HPP
 
 #include "WrongAnimal.hpp"
 
@@ -30,5 +27,3 @@ class	WrongCat : public WrongAnimal
 
 		void		makeSound(void) const;
 };
-
-#endif

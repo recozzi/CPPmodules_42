@@ -6,17 +6,14 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:37:17 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/13 17:13:54 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:38:45 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef CHARACTER_HPP
-# define CHARACTER_HPP
-
-# include "AMateria.hpp"
-# include "ICharacter.hpp"
+#include "AMateria.hpp"
+#include "ICharacter.hpp"
 
 class	Character : public ICharacter
 {
@@ -41,5 +38,3 @@ class	Character : public ICharacter
 		virtual void				unequip(int idx);
 		virtual void				use(int idx, ICharacter& target);
 };
-
-#endif

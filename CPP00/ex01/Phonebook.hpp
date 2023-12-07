@@ -6,16 +6,13 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 14:03:29 by recozzi           #+#    #+#             */
-/*   Updated: 2023/12/07 09:14:58 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:20:39 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
-
-# include "Contact.hpp"
+#include "Contact.hpp"
 
 class Phonebook
 {
@@ -33,5 +30,3 @@ class Phonebook
 		void	addContact(void);
 		void	searchContact(void) const;
 };
-
-#endif

@@ -6,14 +6,11 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 12:32:30 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/17 17:15:57 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:37:47 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-
-#ifndef DOG_HPP
-# define DOG_HPP
 
 #include "AAnimal.hpp"
 #include "Brain.hpp"
@@ -35,5 +32,3 @@ class	Dog : public AAnimal
 
 		virtual void	makeSound(void) const;
 };
-
-#endif

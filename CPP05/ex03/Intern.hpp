@@ -6,18 +6,15 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 13:23:24 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/17 14:47:01 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:45:38 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef INTERN_HPP
-# define INTERN_HPP
-
-# include "ShrubberyCreationForm.hpp"
-# include "RobotomyRequestForm.hpp"
-# include "PresidentialPardonForm.hpp"
+#include "ShrubberyCreationForm.hpp"
+#include "RobotomyRequestForm.hpp"
+#include "PresidentialPardonForm.hpp"
 
 class	Intern
 {
@@ -31,5 +28,3 @@ class	Intern
 
 		AForm*	makeForm(std::string name, std::string target);
 };
-
-#endif

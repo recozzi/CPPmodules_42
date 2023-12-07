@@ -6,16 +6,13 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 16:07:53 by recozzi           #+#    #+#             */
-/*   Updated: 2023/10/30 18:11:15 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:23:34 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef HARL_HPP
-# define HARL_HPP
-
-# include <iostream>
+#include <iostream>
 
 class	Harl
 {
@@ -34,5 +31,3 @@ class	Harl
 
 		void 	complain(std::string level);
 };
-
-#endif

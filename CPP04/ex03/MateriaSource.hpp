@@ -6,17 +6,14 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:32:25 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/09 16:27:11 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:39:41 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef MATERIASOURCE_HPP
-# define MATERIASOURCE_HPP
-
-# include "AMateria.hpp"
-# include "IMateriaSource.hpp"
+#include "AMateria.hpp"
+#include "IMateriaSource.hpp"
 
 class	MateriaSource : public IMateriaSource
 {
@@ -36,5 +33,3 @@ class	MateriaSource : public IMateriaSource
 		virtual void		learnMateria(AMateria* m);
 		virtual AMateria*	createMateria(const std::string& type);
 };
-
-#endif

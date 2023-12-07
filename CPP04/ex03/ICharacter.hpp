@@ -6,16 +6,13 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:31:25 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/09 16:26:03 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:39:22 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef ICHARACTER_HPP
-# define ICHARACTER_HPP
-
-# include <iostream>
+#include <iostream>
 
 class	AMateria;
 
@@ -30,5 +27,3 @@ class	ICharacter
 		virtual void				unequip(int idx) = 0;
 		virtual void				use(int idx, ICharacter& target) = 0;
 };
-
-#endif

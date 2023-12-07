@@ -6,14 +6,11 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 12:18:16 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/17 16:57:22 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:22:21 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-
-#ifndef HUMANA_HPP
-# define HUMANA_HPP
 
 #include "Weapon.hpp"
 
@@ -32,5 +29,3 @@ class	HumanA
 		
 		void	attack(void);
 };
-
-#endif

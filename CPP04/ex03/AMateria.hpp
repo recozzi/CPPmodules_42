@@ -6,17 +6,14 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:26:08 by recozzi           #+#    #+#             */
-/*   Updated: 2023/11/09 16:32:36 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/07 10:38:34 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef AMATERIA_HPP
-# define AMATERIA_HPP
-
-# include <iostream>
-# include "ICharacter.hpp"
+#include <iostream>
+#include "ICharacter.hpp"
 
 class	AMateria
 {
@@ -38,5 +35,3 @@ class	AMateria
 		virtual AMateria*	clone() const = 0;
 		virtual void		use(ICharacter& target);
 };
-
-#endif
