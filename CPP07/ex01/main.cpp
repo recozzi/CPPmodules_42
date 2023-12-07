@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Phonebook.hpp                                      :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 14:03:29 by recozzi           #+#    #+#             */
-/*   Updated: 2023/12/07 09:14:58 by recozzi          ###   ########.fr       */
+/*   Created: 2023/12/06 14:24:43 by recozzi           #+#    #+#             */
+/*   Updated: 2023/12/06 14:31:22 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#include "iter.hpp"
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
-
-# include "Contact.hpp"
-
-class Phonebook
+int		main(void)
 {
-	private:
+	int		arr[] = {1, 2, 3, 4, 5};
+	char	str[] = "Hello World!";
 
-		Contact		_contacts[8];
-		int			_count;
-	
-	public:
-	
-		Phonebook(void);
-		
-		~Phonebook(void);
-		
-		void	addContact(void);
-		void	searchContact(void) const;
-};
+	iter(arr, 5, printArr);
+	std::cout << std::endl;
+	iter(str, 12, printArr);
 
-#endif
+	return 0;
+}

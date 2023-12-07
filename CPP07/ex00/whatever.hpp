@@ -1,47 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Serializer.hpp                                     :+:      :+:    :+:   */
+/*   whatever.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/30 09:46:23 by recozzi           #+#    #+#             */
-/*   Updated: 2023/12/07 09:16:47 by recozzi          ###   ########.fr       */
+/*   Created: 2023/12/05 10:05:53 by recozzi           #+#    #+#             */
+/*   Updated: 2023/12/05 10:37:11 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef SERIALIZER_HPP
-# define SERIALIZER_HPP
+#ifndef WHATEVER_HPP
+# define WHATEVER_HPP
 
 # include <iostream>
-# include <stdint.h>
 
-typedef struct s_data
+template <typename T>
+void	swap(T& a, T& b)
 {
-	std::string str;
-	int 		nbr;
-	char		c;
-	float		f;
-	double		d;
-} Data;
+	T tmp = a;
+	a = b;
+	b = tmp;
+}
 
-class Serializer
+template <typename T>
+const T&	min(const T& a, const T& b)
 {
-	private:
+	return (a < b ? a : b);
+}
 
-		Serializer(void);
-		Serializer(Serializer const& src);
-		
-		~Serializer(void);
+template <typename T>
+const T&	max(const T& a, const T& b)
+{
+	return (a > b ? a : b);
+}
 
-		Serializer&	operator=(Serializer const& rhs);
-		
-	public:
-
-		static uintptr_t	serialize(Data* ptr);
-		static Data*		deserialize(uintptr_t raw);
-};
-
-#endif	
+#endif

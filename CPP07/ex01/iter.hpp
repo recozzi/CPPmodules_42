@@ -1,47 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Serializer.hpp                                     :+:      :+:    :+:   */
+/*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/30 09:46:23 by recozzi           #+#    #+#             */
-/*   Updated: 2023/12/07 09:16:47 by recozzi          ###   ########.fr       */
+/*   Created: 2023/12/05 11:30:41 by recozzi           #+#    #+#             */
+/*   Updated: 2023/12/07 09:18:19 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef SERIALIZER_HPP
-# define SERIALIZER_HPP
+#ifndef ITER_HPP
+# define ITER_HPP
 
 # include <iostream>
-# include <stdint.h>
 
-typedef struct s_data
+template <typename T>
+void	printArr(const T& elem)
 {
-	std::string str;
-	int 		nbr;
-	char		c;
-	float		f;
-	double		d;
-} Data;
+	std::cout << elem << std::endl;
+}
 
-class Serializer
+template <typename T>
+void	iter(T* arr, size_t len, void (*f)(const T&))
 {
-	private:
+	if (!arr || !f)
+		return ;
+	for (size_t i = 0; i < len; i++)
+		(*f)(arr[i]);
+}
 
-		Serializer(void);
-		Serializer(Serializer const& src);
-		
-		~Serializer(void);
-
-		Serializer&	operator=(Serializer const& rhs);
-		
-	public:
-
-		static uintptr_t	serialize(Data* ptr);
-		static Data*		deserialize(uintptr_t raw);
-};
-
-#endif	
+#endif
