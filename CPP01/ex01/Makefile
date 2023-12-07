@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: recozzi <marvin@42.fr>                     +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/17 15:26:14 by recozzi           #+#    #+#              #
-#    Updated: 2023/11/30 15:28:17 by recozzi          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME		:=	horde
 
 CC			:=	c++
@@ -29,7 +17,6 @@ OBJS 		:=	$(addprefix $(OBJS_DIR), $(SRCS:.cpp=.o))
 RED		=	\033[0;91m
 GREEN	=	\033[0;92m
 YELLOW	=	\033[0;93m
-CYAN	=	\033[0;96m
 WHITE	=	\033[0;97m
 
 # ======================================================================== #
@@ -49,12 +36,11 @@ $(NAME): $(OBJS)
 
 clean:
 	@rm $(OBJS)
-	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed..."
+	@echo "$(RED)All object files removed.$(WHITE)"
 
 fclean:	clean
 	@rm $(NAME)
 	@rm -rf $(OBJS_DIR)
-	@echo "$(RED)...And $(CYAN)${NAME}$(RED) as been removed."
 
 re:	fclean all
 
