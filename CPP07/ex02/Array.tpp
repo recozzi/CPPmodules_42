@@ -6,17 +6,17 @@
 /*   By: recozzi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 14:37:30 by recozzi           #+#    #+#             */
-/*   Updated: 2023/12/06 15:56:28 by recozzi          ###   ########.fr       */
+/*   Updated: 2023/12/11 17:13:08 by recozzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 
 template <typename T>
-Array<T>::Array(void) : _array(new T[0]), _size(0) { }
+Array<T>::Array(void) : _array(new T[0]()), _size(0) { }
 
 template <typename T>
-Array<T>::Array(unsigned int n) : _array(new T[n]), _size(n) { }
+Array<T>::Array(unsigned int n) : _array(new T[n]()), _size(n) { }
 
 template <typename T>
 Array<T>::Array(const Array& src)
