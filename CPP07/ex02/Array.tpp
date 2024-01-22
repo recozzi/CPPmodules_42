@@ -40,7 +40,7 @@ Array<T>&	Array<T>::operator=(const Array& rhs)
 		this->_size = rhs._size;
 		if (this->_array)
 			delete [] this->_array;
-		this->_array = new T[this->_size];
+		this->_array = new T[this->_size]();
 		for (unsigned int i = 0; i < this->_size; i++)
 			this->_array[i] = rhs._array[i];
 	}
